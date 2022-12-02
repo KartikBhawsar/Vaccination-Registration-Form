@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+div.sticky {
+   position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: yellow;
+  padding: 10px;
+  font-size: 20px;
+}
+div1{
+position:absolute;
+margin-left:350px;
+top:120px;
+}
+div2{
+position:absolute;
+margin-left:750px;
+top:120px;
+}
+div3{
+position:absolute;
+margin-left:650px;
+top:350px;
+}
+</style>
+<body bgcolor="lightyellow">
+<div class="sticky"><ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul></div>
+<form>
+<fieldset>
+<legend style="background-color:lightgreen;"><b> VACCINATION REGISTRATION FORM:</b></legend>
+<marquee direction="right" style="background-color:yellow;"><b>PLEASE READ FORM CAREFULLY BEFORE FILLING!!!</b></marquee>
+<label for="fname"><b>ENTER YOUR NAME:</b></label>
+<input type="text"id="fname"name="fname"value=""><br><br>
+<label for="lname"><b>ENTER YOUR LAST NAME:</b></label>
+<input type="text"id="lname"name="lname"value=""><br><br>
+<label for="address"><b>ENTER YOUR ADDRESS:</b></label>
+<input type="text"id="address"name="address"value=""size="50"><br><br>
+<label for="contno"><b>CONTACT NO:</b></label>
+<input type="text"id="contno"name="contno"value=""><br><br>
+<label for="email"><b>EMAIL ID:</b></label>
+<input type="text"id="email"name="email"value=""size="50"><br><br>
+<marquee direction="right" style="background-color:lightgreen;"><b>AS PER THE GOVERNMENT PROTOCOL WHO ARE 18+ ARE ELIGIBLE FOR VACCINATION!!</b></marquee>
+<label for="age"><b>AGE:</b></label>
+<input type="text"id="age"name="age"value=""size="10"><br><br>
+<p><b> VACCINE NAME:</b></p>
+<label for="vaccine"><b>COVAXIN:</b></label>
+<input type="radio"id="vaccine"name="vaccine"value="COVAXIN">
+<label for="vaccine"><b>COVISHIELD:</b></label>
+<input type="radio"id="vaccine"name="vaccine"value="COVISHIELD"><br>
+<p><b>SELECT CITY:</b></p>
+ <select id="city" name="city">
+    <option value="indore">INDORE</option>
+    <option value="bhopal">BHOPAL</option>
+    <option value="gwalior">GWALIOR</option>
+    <option value="ujjain">UJJAIN</option>
+  </select>
+<label for="pin"><b>PIN CODE:</b></label>
+<input type="text"id="pin"name="pin"value=""size="10">
+
+<div1><img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/vaccine_covid19_other/1800x1200_vaccine_2_other.jpg?resize=*:350px"width="400"height="200"></div1>
+<div2><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdavL6UsGe5dpdLr8_dkuzIxPq_3o9Nxi-7Q&usqp=CAU"width="450"height="200"></div2>
+<label for="otp"><b>ENTER OTP:</b></label>
+<input type="text"id="otp"name="otp"value="">
+<button type="button" onclick="alert('625784')">SEND OTP!</button><br><br>
+<p><b>FEEDBACK!</b></p>
+<textarea name="message" rows="10" cols="30"></textarea><br>
+<button type="button" onclick="alert('REGISTRATION COMPLETED THANK YOU!')">DONE!</button><br><br>
+<input type="submit"value="submit"terget="_self">
+<div3><img src="https://statesboroherald.cdn-anvilcms.net/media/images/2021/02/19/images/Register_vaccine_logo.max-1200x675.jpg"width="750"height="350"></div3>
+
+
+</fieldset>
+</form>
+</body>
+</head>
+</html>
